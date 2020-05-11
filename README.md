@@ -15,14 +15,15 @@ Host: localhost:8080
 Content-Type: application/json
 ```
 - **Write some key-value pairs to the cache**
+You can write multiple entries at once
 ```
 POST /cache HTTP/1.1
 Host: localhost:8080
 Content-Type: application/json
 
-{
-	"one": "one",
-	"two":  "two"
+{ 
+  "one": "one",
+  "two":  "two"	
 }
 ```
 
@@ -33,15 +34,15 @@ Host: localhost:8080
 Content-Type: application/json
 
 {
-	"one": "one",
-	"two":  {
-        "empId": 1098,
-        "firstName": "first name",
-        "lastName": "last name",
-        "email": "test@btest.com",
-        "telephone": "mmmmm",
-        "role": "owner",
-        "id": null
+  "one": "one",
+  "two":  {
+     "empId": 1098,
+      "firstName": "first name",
+      "lastName": "last name",
+      "email": "test@btest.com",
+      "telephone": "mmmmm",
+      "role": "owner",
+      "id": null
     }
 }
 ```
@@ -52,16 +53,4 @@ Delete /cache/someKey HTTP/1.1
 Host: localhost:8080
 Content-Type: application/json
 
-{
-	"one": "one",
-	"two":  {
-        "empId": 1098,
-        "firstName": "first name",
-        "lastName": "last name",
-        "email": "test@btest.com",
-        "telephone": "mmmmm",
-        "role": "owner",
-        "id": null
-    }
-}
 ```
