@@ -47,7 +47,7 @@ Content-Type: application/json
 }
 ```
 
-- **Remove a key from the cache **
+- **Remove a key from the cache**
 ```
 Delete /cache/someKey HTTP/1.1
 Host: localhost:8080
