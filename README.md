@@ -1,6 +1,6 @@
 # lru-caching-service
 
-Initial commit for the least recently used caching service.
+Least Recently Used caching service. Read and write operations are in O(1) time complexity. I used DoublyLinkedList for write/remove and Map for read operation makes.
 
 ## Getting Started
 - Use `npm install` to install dependencies.
