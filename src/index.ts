@@ -7,7 +7,7 @@ const port = process.env.PORT || "8080";
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }))
 
-const cache = new LRUCache(5);
+const cache = new LRUCache();
 
 app.get('/cache/:key', (req, res) => {
   const value = cache.read(req.params.key);
