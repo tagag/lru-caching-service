@@ -3,8 +3,9 @@
 Initial commit for the least recently used caching service.
 
 ## Getting Started
-- Run the server with `npm start`
+- Run the server with `npm start`.
 - The internal cache system has a default capacity of `10`, you can change that. 
+- Run test suites with `npm test`.
 
 ## Usage
 
