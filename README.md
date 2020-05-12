@@ -12,7 +12,7 @@ Least Recently Used caching service. Read and write operations are in O(1) time 
 
 - **Read a key from the cache**
 ```
-GET /cache/someKey HTTP/1.1
+GET /cache/<someKey> HTTP/1.1
 Host: localhost:8080
 Content-Type: application/json
 ```
@@ -51,7 +51,7 @@ Content-Type: application/json
 
 - **Remove a key from the cache**
 ```
-Delete /cache/someKey HTTP/1.1
+Delete /cache/<someKey> HTTP/1.1
 Host: localhost:8080
 Content-Type: application/json
 
