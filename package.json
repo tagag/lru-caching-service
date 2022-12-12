@@ -23,7 +23,7 @@
   },
   "dependencies": {
     "@types/jest": "^25.2.1",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "ts-node-dev": "^1.0.0-pre.44"
   }
 }
